@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.1</TargetFramework>
+        <OutputType>Exe</OutputType>
+        <AssemblyName>BullsAndCows.Presentation.Console</AssemblyName>
+        <RootNamespace>BullsAndCows.Presentation.Console</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\BullsAndCows.Business\BullsAndCows.Business.csproj" />
+      <ProjectReference Include="..\BullsAndCows.Data\BullsAndCows.Data.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Autofac" Version="4.8.1" />
+      <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.3.0" />
+    </ItemGroup>
+
+</Project>
